@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1019605781058",
+    "firebase_url": "https://expense-tracker-c2d92.firebaseio.com",
+    "project_id": "expense-tracker-c2d92",
+    "storage_bucket": "expense-tracker-c2d92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019605781058:android:d3b72d5c16724f36",
+        "android_client_info": {
+          "package_name": "com.symbiosis.nikhilmatta.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019605781058-7dmebjvpvtcd7t6g6kc8tnjrmt58heqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.symbiosis.nikhilmatta.expensetracker",
+            "certificate_hash": "9e823020e1abcdb7cd25895f1b38bd8e49e6884d"
+          }
+        },
+        {
+          "client_id": "1019605781058-ekhlf4qfblkl7l63hs5tjpamuek88d0k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.symbiosis.nikhilmatta.expensetracker",
+            "certificate_hash": "b45e0e3ef506c545808295df82b2285e20eb678a"
+          }
+        },
+        {
+          "client_id": "1019605781058-42mectkaic37iv57jvi8r6ofrqvshput.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAohkHNN5LddthrYHNbGvifG3-SQLcvsMU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019605781058-42mectkaic37iv57jvi8r6ofrqvshput.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

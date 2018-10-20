@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="title_activity_expense_drawer">ExpenseDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_expenses_drawer">ExpensesDrawer</string>
+    <string name="group_expenses">Group Expenses</string>
+    <string name="personal_expenses">Personal Expenses</string>
+    <string name="user_profile">Profile</string>
+    <string name="title_activity_expense_type_tab">ExpenseTypeTab</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="food">Food</string>
+    <string name="fuel">Fuel</string>
+    <string name="clothes">Clothes</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="others">Miscellaneous</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="food_expenses">Food Expenses</string>
+    <string name="fuel_expenses">Fuel Expenses</string>
+    <string name="clothes_expenses">Clothes Expenses</string>
+    <string name="entertainment_expenses">Entertainment Expenses</string>
+    <string name="miscellaneous_expenses">Miscellaneous Expenses</string>
+
+
+    <string-array name="expense_arrays">
+        <item>Food</item>
+        <item>Clothes</item>
+        <item>Entertainment</item>
+        <item>Fuel</item>
+        <item>Miscellaneous</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="expense_prompt">Choose category</string>
+    <string name="save_expense">Save</string>
+
+</resources>
