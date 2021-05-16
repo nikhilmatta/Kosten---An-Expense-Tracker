@@ -1,5 +1,6 @@
 package com.symbiosis.nikhilmatta.expensetracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -48,20 +49,13 @@ public class addClothesExpense extends AppCompatActivity {
                 String uID = currentUser.getCurrentUser().getUid();
 
 
-                mDatabase.child(uID).child("personalExpenses").child("Clothes").push().setValue(addClothes);
+                mDatabase.child("users").child(uID).child("personalExpenses").child("Clothes").push().setValue(addClothes);
                 Toast.makeText(addClothesExpense.this,"Expense Added",Toast.LENGTH_SHORT).show();
                 finish();
+                Intent intent = new Intent(addClothesExpense.this, personalExpenses.class);
+                startActivity(intent);
 
             }
         });
-
-
-
-
-
-
-
-
-
     }
 }

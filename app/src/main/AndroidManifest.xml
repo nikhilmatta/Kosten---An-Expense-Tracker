@@ -37,7 +37,10 @@
         <activity android:name=".addClothesExpense" />
         <activity android:name=".addFuelExpenses" />
         <activity android:name=".addEntertainmentExpenses" />
-        <activity android:name=".addMiscellaneousExpenses"></activity>
+        <activity android:name=".layoutGroupExpense" />
+        <activity android:name=".addMiscellaneousExpenses" />
+        <activity android:name=".createGroup"></activity>
+        <activity android:name=".addExpense"></activity>
     </application>
 
 </manifest>

@@ -1,33 +1,34 @@
 package com.symbiosis.nikhilmatta.expensetracker;
 
 import java.io.Serializable;
-import java.util.Calendar;
 
 /**
- * Created by nikhilmatta on 13/04/18.
+ * Created by nikhilmatta on 17/04/18.
  */
 
-public class addE implements Serializable {
+public class addGroup implements Serializable {
 
+    public String name;
     public Double amount;
     public String note;
-    //String date;
 
+    addGroup() {
 
-    addE() {
-
-        //Default Constructor
 
     }
 
-    public addE(Double amount,String note) {
+    public addGroup(String name, Double amount, String note) {
+        this.name = name;
+        this.amount = amount;
+        this.note = note;
+    }
 
-        this.amount=amount;
+    public String getName() {
+        return name;
+    }
 
-        this.note=note;
-
-        //this.date=date;
-
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Double getAmount() {
@@ -46,3 +47,5 @@ public class addE implements Serializable {
         this.note = note;
     }
 }
+
+

@@ -1,5 +1,6 @@
 package com.symbiosis.nikhilmatta.expensetracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -48,9 +49,11 @@ public class addFuelExpenses extends AppCompatActivity {
                 String uID = currentUser.getCurrentUser().getUid();
 
 
-                mDatabase.child(uID).child("personalExpenses").child("Fuel").push().setValue(addFuel);
+                mDatabase.child("users").child(uID).child("personalExpenses").child("Fuel").push().setValue(addFuel);
                 Toast.makeText(addFuelExpenses.this, "Expense Added", Toast.LENGTH_SHORT).show();
                 finish();
+                Intent intent = new Intent(addFuelExpenses.this, personalExpenses.class);
+                startActivity(intent);
 
             }
         });

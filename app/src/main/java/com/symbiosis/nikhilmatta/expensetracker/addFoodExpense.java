@@ -1,5 +1,6 @@
 package com.symbiosis.nikhilmatta.expensetracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +34,7 @@ public class addFoodExpense extends AppCompatActivity {
         addNote = (EditText) findViewById(R.id.addFoodNoteTextField);
 
 
-        saveFoodExpenseButton = (Button) findViewById(R.id.saveFoodExpenseButton);
+        saveFoodExpenseButton = (Button) findViewById(R.id.saveGroupExpenseButton);
         saveFoodExpenseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,9 +49,11 @@ public class addFoodExpense extends AppCompatActivity {
                 String uID = currentUser.getCurrentUser().getUid();
 
 
-                mDatabase.child(uID).child("personalExpenses").child("Food").push().setValue(addFood);
+                mDatabase.child("users").child(uID).child("personalExpenses").child("Food").push().setValue(addFood);
                 Toast.makeText(addFoodExpense.this,"Expense Added",Toast.LENGTH_SHORT).show();
                 finish();
+                Intent intent = new Intent(addFoodExpense.this, personalExpenses.class);
+                startActivity(intent);
 
             }
         });
